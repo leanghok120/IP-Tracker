@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -14,9 +20,19 @@
   </head>
   <body>
     <div class="container">
-      <h1>IP Address Tracker</h1>
-
-      <input type="text" placeholder="Search for any IP address or domain" />
+      <div class="hero-container">
+        <h1 class="header-text">IP Address Tracker</h1>
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search for any IP address or domain"
+            id="input-bar"
+          />
+          <button id="search-button">
+            <img src="images/icon-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+      </div>
 
       IP Address Location Timezone UTC
       <!-- add offset value dynamically using the API -->
