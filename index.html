@@ -22,7 +22,7 @@
     <div class="container">
       <div class="hero-container">
         <h1 class="header-text">IP Address Tracker</h1>
-        <div class="search-bar">
+        <form class="search-bar">
           <input
             type="text"
             placeholder="Search for any IP address or domain"
@@ -31,19 +31,33 @@
           <button id="search-button">
             <img src="images/icon-arrow.svg" alt="arrow" />
           </button>
-        </div>
+        </form>
+        <ul class="info-card">
+          <li class="info">
+            <p class="">IP Address</p>
+            <h2>192.212.174.101</h2>
+          </li>
+          <li class="info">
+            <p>Location</p>
+            <h2>Brooklyn, NY 10001</h2>
+          </li>
+          <li class="info">
+            <p>Timezone</p>
+            <h2>UTC -05:00</h2>
+          </li>
+          <li class="info">
+            <p>ISP</p>
+            <h2>SpaceX Starlink</h2>
+          </li>
+        </ul>
       </div>
 
-      IP Address Location Timezone UTC
-      <!-- add offset value dynamically using the API -->
-      ISP
-
-      <div class="attribution">
+      <!-- <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Leanghok</a>.
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
