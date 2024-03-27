@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -22,39 +33,40 @@
     <div class="container">
       <div class="hero-container">
         <h1 class="header-text">IP Address Tracker</h1>
-        <form class="search-bar">
+        <div class="search-bar">
           <input
             type="text"
             placeholder="Search for any IP address or domain"
             id="input-bar"
           />
-          <button id="search-button">
+          <button id="search-button" onclick="searchValue()" type="submit">
             <img src="images/icon-arrow.svg" alt="arrow" />
           </button>
-        </form>
+        </div>
         <ul class="info-card">
           <li class="info">
             <p class="">IP Address</p>
-            <h2>192.212.174.101</h2>
+            <h2 id="ip-info"></h2>
           </li>
           <div class="divider"></div>
           <li class="info">
             <p>Location</p>
-            <h2>Brooklyn, NY 10001</h2>
+            <h2 id="location-info"></h2>
           </li>
           <div class="divider"></div>
           <li class="info">
             <p>Timezone</p>
-            <h2>UTC -05:00</h2>
+            <h2 id="timezone-info"></h2>
           </li>
           <div class="divider"></div>
           <li class="info">
             <p>ISP</p>
-            <h2>SpaceX Starlink</h2>
+            <h2 id="isp-info"></h2>
           </li>
         </ul>
       </div>
 
+      <div id="map"></div>
       <!-- <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -62,5 +74,7 @@
         >. Coded by <a href="#">Leanghok</a>.
       </div> -->
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

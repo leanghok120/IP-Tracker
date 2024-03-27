@@ -21,7 +21,7 @@ ul {
 .container {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
-  height: 100%;
+  height: 100vh;
 }
 
 .hero-container {
@@ -98,6 +98,9 @@ ul {
   margin-top: 50px;
   padding-top: 60px;
   padding-bottom: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 999;
 }
 
 .info-card li p {
@@ -116,6 +119,10 @@ ul {
   font-size: 30px;
   font-weight: 700;
   margin-top: 10px;
+}
+
+#map {
+  height: 75%;
 }
 
 .attribution {
