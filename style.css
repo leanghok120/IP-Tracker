@@ -13,6 +13,11 @@ ul {
   list-style: none;
 }
 
+.divider {
+  border: 1px solid hsl(0, 0%, 59%);
+  opacity: 0.2;
+}
+
 .container {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
