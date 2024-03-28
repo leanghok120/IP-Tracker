@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0/hub?share=true)
+- Live Site URL: [Live Site](https://frontend-mentor-tracker.netlify.app/)
 
 ## My process
 
